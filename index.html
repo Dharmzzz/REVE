@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rêve Eco — Steps That Count</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="chat.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -397,6 +398,76 @@
     </div>
   </footer>
 
+  <!-- ===== AI CHATBOT WIDGET (LangChain Integration) ===== -->
+  <button class="chat-widget-toggle" id="chatToggle" aria-label="Open AI Assistant">
+    <div class="chat-toggle-icon"><i data-lucide="message-circle"></i></div>
+    <span class="chat-toggle-label">Ask Eco AI</span>
+    <span class="chat-toggle-badge"></span>
+  </button>
+
+  <div class="chat-window" id="chatWindow" role="dialog" aria-labelledby="chatTitle">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">
+          <i data-lucide="bot"></i>
+        </div>
+        <div class="chat-title-group">
+          <h4 id="chatTitle">Eco Assistant</h4>
+          <div class="chat-status">
+            <span class="status-dot"></span>
+            <span>Online · Trained on Eco Guide</span>
+          </div>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-header-btn" id="chatMinimize" aria-label="Minimize chat">
+          <i data-lucide="minus"></i>
+        </button>
+        <button class="chat-header-btn" id="chatClose" aria-label="Close chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-msg-bubble">
+          Hello! 👋 I'm your <strong>Rêve Eco Assistant</strong>, powered by LangChain and trained on our official sustainability catalog and policies.<br><br>
+          How can I help you take a step towards a healthier planet today?
+        </div>
+        <span class="chat-msg-meta">Eco Friendly Shoes AI</span>
+      </div>
+    </div>
+
+    <!-- Quick suggestion pills -->
+    <div class="chat-suggestions">
+      <button class="chat-pill" data-query="What discount codes do you have?">Discount Codes</button>
+      <button class="chat-pill" data-query="What is your return policy?">Return Policy</button>
+      <button class="chat-pill" data-query="What sizes do you carry?">Shoe Sizing</button>
+      <button class="chat-pill" data-query="Are the shoes waterproof?">Waterproof?</button>
+      <button class="chat-pill" data-query="What makes Eco Friendly Shoes different from regular sneakers?">Materials &amp; Impact</button>
+      <button class="chat-pill" data-query="How long does shipping take?">Shipping Info</button>
+    </div>
+
+    <div class="chat-input-bar">
+      <input
+        type="text"
+        class="chat-input"
+        id="chatInput"
+        placeholder="Ask about sizing, materials, returns..."
+        autocomplete="off"
+        aria-label="Ask a question"
+      />
+      <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message">
+        <i data-lucide="send"></i>
+      </button>
+    </div>
+    <div class="chat-footer-note">
+      Powered by LangChain · Eco Friendly Shoes Dataset v1.0
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script src="chat.js"></script>
 </body>
 </html>
