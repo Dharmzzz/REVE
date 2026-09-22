@@ -4,10 +4,11 @@
    ============================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Determine API endpoint (use local backend on port 8000 if running, or relative path)
-  const API_URL = (window.location.port === "8000") 
-    ? "/api/chat" 
-    : "http://127.0.0.1:8000/api/chat";
+  // Determine API endpoint:
+  // - If running on separate local dev server (port 5500), connect to port 8000
+  // - In production (Render, etc.) or when served from FastAPI directly, use relative "/api/chat"
+  const isLocalDevSplit = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") && window.location.port === "5500";
+  const API_URL = isLocalDevSplit ? "http://127.0.0.1:8000/api/chat" : "/api/chat";
 
   // Elements
   const chatToggle = document.getElementById("chatToggle");
