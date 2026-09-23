@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Collection — Rêve Eco Sustainable Sneakers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="chat.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- ===== FROSTED PILL NAVIGATION ===== -->
+  <div class="pill-nav-wrapper" id="pillNav">
+    <nav class="pill-nav">
+      <a href="index.html" class="pill-nav-brand"><span class="logo-r">R</span>êve Eco</a>
+      <div class="pill-nav-links" id="pillNavLinks">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help &amp; FAQs</a>
+        <a href="help.html#contact">Contact</a>
+      </div>
+      <button class="pill-hamburger" id="pillHamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span>Shop</span>
+    </div>
+    <h1 class="page-title">The Sustainable Collection</h1>
+    <p class="page-subtitle">
+      Footwear designed for style, built for durability, and engineered from recycled ocean plastics and plant-based cork.
+    </p>
+  </header>
+
+  <!-- ===== SUBNAV TABS ===== -->
+  <div class="subnav-wrapper">
+    <div class="subnav-tabs">
+      <a href="#new-arrivals" class="subnav-tab active">
+        <i data-lucide="sparkles"></i> New Arrivals
+      </a>
+      <a href="#best-sellers" class="subnav-tab">
+        <i data-lucide="flame"></i> Best Sellers
+      </a>
+      <a href="#all-shoes" class="subnav-tab">
+        <i data-lucide="grid"></i> All Shoes
+      </a>
+      <a href="#gift-cards" class="subnav-tab">
+        <i data-lucide="gift"></i> Gift Cards
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 1. NEW ARRIVALS SECTION ===== -->
+  <section class="subpage-section" id="new-arrivals">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="sparkles"></i> Fresh Seasonal Drops</span>
+      <h2 class="subpage-title">New Arrivals</h2>
+      <p class="subpage-desc">
+        The latest innovations in planet-first footwear, featuring water-resistant trail soles and breathable recycled knit uppers.
+      </p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Item 1 -->
+      <div class="product-card">
+        <span class="product-badge product-badge--new">New Drop</span>
+        <div class="product-img-wrap">
+          <img src="assets/shoes3.jpg" alt="Trail Explorer Waterproof V2" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Outdoor / Hiking</span>
+          <h3 class="product-name">Trail Explorer Waterproof V2</h3>
+          <p class="product-features-mini">
+            Cork &amp; natural rubber sole with plant-based water-resistant treatment for trail and rain durability.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$149</span>
+            <button class="btn-buy" onclick="alert('Added Trail Explorer V2 to cart!')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="product-card">
+        <span class="product-badge product-badge--new">New Drop</span>
+        <div class="product-img-wrap">
+          <img src="assets/shoes1.jpg" alt="Urban Minimalist Low-Top" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">City Minimalist</span>
+          <h3 class="product-name">Urban Minimalist Low-Top</h3>
+          <p class="product-features-mini">
+            Ultra-lightweight upper woven from 12 recycled ocean plastic bottles with vegetable-tanned leather trim.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$99</span>
+            <button class="btn-buy" onclick="alert('Added Urban Minimalist to cart!')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="product-card">
+        <span class="product-badge product-badge--new">New Drop</span>
+        <div class="product-img-wrap">
+          <img src="assets/shoes5.jpg" alt="Athletic Pro Runner" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Running &amp; Training</span>
+          <h3 class="product-name">Athletic Pro Runner</h3>
+          <p class="product-features-mini">
+            High-rebound plant-based polyurethane cushioning with aerodynamic organic mesh ventilation.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$169</span>
+            <button class="btn-buy" onclick="alert('Added Athletic Pro Runner to cart!')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. BEST SELLERS SECTION ===== -->
+  <section class="subpage-section" id="best-sellers">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="flame"></i> Community Favorites</span>
+      <h2 class="subpage-title">Best Sellers</h2>
+      <p class="subpage-desc">
+        Loved by thousands of conscious walkers, skaters, and commuters. Rated 4.9/5 stars for all-day comfort.
+      </p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Item 1 -->
+      <div class="product-card">
+        <span class="product-badge product-badge--bestseller">#1 Best Seller</span>
+        <div class="product-img-wrap">
+          <img src="assets/shoes1.jpg" alt="Rêve Eco Flagship Sneaker" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Signature Sneaker</span>
+          <h3 class="product-name">Rêve Eco Flagship Classic</h3>
+          <p class="product-features-mini">
+            Our iconic sage green and natural tan sneaker. Shock-absorbing cork sole, GOTS organic cotton lining.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$129</span>
+            <button class="btn-buy" onclick="alert('Added Flagship Classic to cart!')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="product-card">
+        <span class="product-badge product-badge--bestseller">Trending</span>
+        <div class="product-img-wrap">
+          <img src="assets/shoes2.jpg" alt="Street Style Skate Low" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Skate &amp; Lifestyle</span>
+          <h3 class="product-name">Street Style Skate Low</h3>
+          <p class="product-features-mini">
+            Reinforced abrasion-resistant toe cap with sustainable canvas upper and natural rubber grip.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$119</span>
+            <button class="btn-buy" onclick="alert('Added Street Style to cart!')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="product-card">
+        <span class="product-badge product-badge--classic">Timeless</span>
+        <div class="product-img-wrap">
+          <img src="assets/shoes6.jpg" alt="Eco Classics Clean White" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Everyday Essential</span>
+          <h3 class="product-name">Eco Classics Clean White</h3>
+          <p class="product-features-mini">
+            Scandinavian minimalist silhouette made from 100% recycled plastics. Easy to dress up or down.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$109</span>
+            <button class="btn-buy" onclick="alert('Added Eco Classics to cart!')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. ALL SHOES (5 COLLECTIONS) ===== -->
+  <section class="subpage-section" id="all-shoes">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="grid"></i> Complete Catalog</span>
+      <h2 class="subpage-title">All Shoe Collections</h2>
+      <p class="subpage-desc">
+        Explore every collection engineered by Rêve Eco. 100% vegan certified, ethically produced, and carbon-neutral shipped.
+      </p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Collection 1: Urban Essentials -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/shoes1.jpg" alt="Urban Essentials" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Entry Level · $79–$99</span>
+          <h3 class="product-name">Urban Essentials</h3>
+          <p class="product-features-mini">
+            Minimalist city sneakers. Recycled plastic upper, plant-based vegan leather accents, lightweight all-day comfort.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$79 – $99</span>
+            <button class="btn-buy" onclick="alert('Viewing Urban Essentials')">Select Size</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 2: Trail Explorer -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/shoes3.jpg" alt="Trail Explorer" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Outdoor · $119–$149</span>
+          <h3 class="product-name">Trail Explorer</h3>
+          <p class="product-features-mini">
+            High-traction outdoor hiking shoes with natural cork sole, plant-based upper, and water-resistant finish.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$119 – $149</span>
+            <button class="btn-buy" onclick="alert('Viewing Trail Explorer')">Select Size</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 3: Street Style -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/shoes2.jpg" alt="Street Style" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Skate · $89–$129</span>
+          <h3 class="product-name">Street Style</h3>
+          <p class="product-features-mini">
+            Skateboard and lifestyle sneakers. Reinforced toe protection, durable sustainable organic canvas, multiple colors.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$89 – $129</span>
+            <button class="btn-buy" onclick="alert('Viewing Street Style')">Select Size</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 4: Athletic Performance -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/shoes5.jpg" alt="Athletic Performance" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Performance · $129–$169</span>
+          <h3 class="product-name">Athletic Performance</h3>
+          <p class="product-features-mini">
+            Running and training shoes with responsive plant-based polyurethane sole and breathable engineered knit.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$129 – $169</span>
+            <button class="btn-buy" onclick="alert('Viewing Athletic Performance')">Select Size</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 5: Eco Classics -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/shoes6.jpg" alt="Eco Classics" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <span class="product-category">Everyday · $99–$119</span>
+          <h3 class="product-name">Eco Classics</h3>
+          <p class="product-features-mini">
+            Timeless everyday wear crafted from recycled ocean plastic flakes with a minimal, versatile silhouette.
+          </p>
+          <div class="product-meta-row">
+            <span class="product-price">$99 – $119</span>
+            <button class="btn-buy" onclick="alert('Viewing Eco Classics')">Select Size</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. GIFT CARDS SECTION ===== -->
+  <section class="subpage-section" id="gift-cards">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="gift"></i> Give the Gift of Choice</span>
+      <h2 class="subpage-title">Digital Gift Cards</h2>
+      <p class="subpage-desc">
+        Delivered instantly by email with your personal note. Never expires, zero packaging waste, and 1 tree planted per gift card.
+      </p>
+    </div>
+
+    <div class="giftcard-container">
+      <!-- Visual Card Preview -->
+      <div class="giftcard-preview">
+        <div class="giftcard-chip"></div>
+        <div>
+          <div class="giftcard-amount-display" id="giftcardAmountDisplay">$100</div>
+          <div class="giftcard-brand">Rêve Eco · Walk Your Values</div>
+        </div>
+        <div style="font-size: 0.78rem; opacity: 0.85;">Digital Card · Valid on all collections</div>
+      </div>
+
+      <!-- Selector Controls -->
+      <div class="giftcard-controls">
+        <h4>Select Denomination:</h4>
+        <div class="tier-buttons">
+          <button class="tier-btn" data-amount="25">$25</button>
+          <button class="tier-btn" data-amount="50">$50</button>
+          <button class="tier-btn active" data-amount="100">$100</button>
+          <button class="tier-btn" data-amount="200">$200</button>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Gift card order initiated!');" style="display: flex; flex-direction: column; gap: 12px;">
+          <div>
+            <label style="font-size: 0.82rem; font-weight: 600; color: #444; display: block; margin-bottom: 4px;">Recipient Email:</label>
+            <input type="email" required placeholder="friend@example.com" class="form-input" style="width: 100%; border: 1px solid #ddd; padding: 10px 14px; border-radius: 8px;" />
+          </div>
+          <div>
+            <label style="font-size: 0.82rem; font-weight: 600; color: #444; display: block; margin-bottom: 4px;">Personal Note (Optional):</label>
+            <textarea placeholder="Step lightly, live boldly! Happy Birthday!" rows="2" style="width: 100%; border: 1px solid #ddd; padding: 10px 14px; border-radius: 8px; font-family: inherit; font-size: 0.85rem;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: 100%;">Purchase Digital Gift Card</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><span class="logo-r">R</span>êve Eco</a>
+        <p class="footer-tagline">Every Step Shapes Tomorrow</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html#new-arrivals">New Arrivals</a>
+          <a href="shop.html#best-sellers">Best Sellers</a>
+          <a href="shop.html#all-shoes">All Shoes</a>
+          <a href="shop.html#gift-cards">Gift Cards</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html#our-story">Our Story</a>
+          <a href="about.html#sustainability">Sustainability</a>
+          <a href="about.html#materials">Materials</a>
+          <a href="about.html#impact-report">Impact Report</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="help.html#faq">FAQ</a>
+          <a href="help.html#shipping">Shipping</a>
+          <a href="help.html#returns">Returns</a>
+          <a href="help.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rêve Eco. All rights reserved. Walk your values.</p>
+      <div class="footer-certs">
+        <span><i data-lucide="leaf" class="footer-cert-icon"></i> B Corp Certified</span>
+        <span><i data-lucide="recycle" class="footer-cert-icon"></i> Climate Neutral</span>
+        <span><i data-lucide="globe" class="footer-cert-icon"></i> 1% for the Planet</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== AI CHATBOT WIDGET ===== -->
+  <button class="chat-widget-toggle" id="chatToggle" aria-label="Open AI Assistant">
+    <div class="chat-toggle-icon"><i data-lucide="message-circle"></i></div>
+    <span class="chat-toggle-label">Ask Eco AI</span>
+    <span class="chat-toggle-badge"></span>
+  </button>
+
+  <div class="chat-window" id="chatWindow" role="dialog" aria-labelledby="chatTitle">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar"><i data-lucide="bot"></i></div>
+        <div class="chat-title-group">
+          <h4 id="chatTitle">Eco Assistant</h4>
+          <div class="chat-status"><span class="status-dot"></span><span>Online · Trained on Eco Guide</span></div>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-header-btn" id="chatMinimize" aria-label="Minimize chat"><i data-lucide="minus"></i></button>
+        <button class="chat-header-btn" id="chatClose" aria-label="Close chat"><i data-lucide="x"></i></button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-msg-bubble">
+          Hello! 👋 Exploring our collections? Ask me about sizes (US 4–15), waterproofing, or use code <strong>WELCOME15</strong> for 15% off!
+        </div>
+        <span class="chat-msg-meta">Eco Friendly Shoes AI</span>
+      </div>
+    </div>
+    <div class="chat-suggestions">
+      <button class="chat-pill" data-query="What discount codes do you have?">Discount Codes</button>
+      <button class="chat-pill" data-query="What is your return policy?">Return Policy</button>
+      <button class="chat-pill" data-query="What sizes do you carry?">Shoe Sizing</button>
+      <button class="chat-pill" data-query="Are the shoes waterproof?">Waterproof?</button>
+    </div>
+    <div class="chat-input-bar">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask about sizing, materials, returns..." autocomplete="off" />
+      <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message"><i data-lucide="send"></i></button>
+    </div>
+    <div class="chat-footer-note">Powered by LangChain · Eco Friendly Shoes Dataset v1.0</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

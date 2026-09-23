@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Help &amp; FAQs — Rêve Eco</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="chat.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- ===== FROSTED PILL NAVIGATION ===== -->
+  <div class="pill-nav-wrapper" id="pillNav">
+    <nav class="pill-nav">
+      <a href="index.html" class="pill-nav-brand"><span class="logo-r">R</span>êve Eco</a>
+      <div class="pill-nav-links" id="pillNavLinks">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="help.html" class="active">Help &amp; FAQs</a>
+        <a href="help.html#contact">Contact</a>
+      </div>
+      <button class="pill-hamburger" id="pillHamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span>Help Center</span>
+    </div>
+    <h1 class="page-title">How Can We Help You?</h1>
+    <p class="page-subtitle">
+      Find quick answers about shipping, sizing, returns, or reach out directly to our customer care team.
+    </p>
+  </header>
+
+  <!-- ===== SUBNAV TABS ===== -->
+  <div class="subnav-wrapper">
+    <div class="subnav-tabs">
+      <a href="#faq" class="subnav-tab active">
+        <i data-lucide="help-circle"></i> FAQ
+      </a>
+      <a href="#shipping" class="subnav-tab">
+        <i data-lucide="truck"></i> Shipping Info
+      </a>
+      <a href="#returns" class="subnav-tab">
+        <i data-lucide="refresh-cw"></i> 60-Day Returns
+      </a>
+      <a href="#contact" class="subnav-tab">
+        <i data-lucide="mail"></i> Contact Support
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 1. FAQ ACCORDION SECTION ===== -->
+  <section class="subpage-section" id="faq">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="help-circle"></i> Instant Answers</span>
+      <h2 class="subpage-title">Frequently Asked Questions</h2>
+      <p class="subpage-desc">
+        Everything you need to know about our footwear, care, sizing, and policies.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <!-- Q1 -->
+      <div class="faq-item active">
+        <button class="faq-question">
+          <span>What makes Eco Friendly Shoes different from regular sneakers?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Eco Friendly Shoes are made from sustainable materials like recycled ocean plastic, plant-based vegan leather, organic cotton, and natural cork soles. Each shoe diverts 500g–1kg of ocean plastic from landfills and saves 50–100 liters of water compared to traditional sneaker production. We are committed to transparency, ethical labor, and measurable environmental regeneration.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How much do the shoes cost?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Our prices range from $79 to $169 depending on the collection. Entry-level sneakers (Urban Essentials) start at $79–$99, mid-range options (Street Style &amp; Eco Classics) are $89–$129, and premium outdoor/athletic shoes (Trail Explorer &amp; Athletic Performance) are $119–$169.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you have a return policy?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes! We offer a 60-day money-back guarantee on all shoes with no questions asked. Returns and size exchanges are 100% free — we provide a prepaid shipping label. Refunds are processed within 5–10 business days of receiving your return.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How long does shipping take and what does it cost?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Standard shipping is FREE on orders over $50 (5–7 business days). Express shipping is $9.99 (2–3 business days), and Overnight delivery is $24.99 (next business day if ordered before 12pm EST). International shipping starts at $19.99 (10–15 business days to 50+ countries, 100% carbon-neutral).
+          </p>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are the shoes comfortable for everyday wear?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Absolutely! Our shoes are engineered for ergonomic comfort and supportive all-day wear. They feature shock-absorbing cork soles, plant-based cushioned insoles, and breathable recycled knit uppers designed for urban commuting, walking, and active lifestyles.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What sizes do you carry?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We offer US sizes 4 to 15 in both women's and men's sizing. Our shoes run true to US size. If uncertain, you can order two sizes and return the one that doesn't fit completely free using our prepaid label.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are Eco Friendly Shoes vegan?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes, all our shoes are 100% certified vegan. We use zero animal-derived materials. Our 'leather' is plant-based (vegetable-tanned with tree bark extracts) or recycled synthetic alternatives. All glues, linings, and soles are fully vegan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I get a discount on my first order?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes! New customers get 15% off with promo code <strong>WELCOME15</strong> at checkout. You can also get 10% off by joining our newsletter, 20% off with a verified student ID, and $15 store credit for each friend you refer.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are the shoes waterproof?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Our Urban Essentials and Street Style collections are water-resistant. The Trail Explorer collection features enhanced outdoor water-resistant treatment. For full waterproof protection in downpours, we recommend applying our plant-based waterproof spray (sold separately).
+          </p>
+        </div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How should I clean and care for my Eco Shoes?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Clean with cold water and mild eco soap using a soft cloth or brush. Air dry naturally and avoid direct radiators or heat sources. Remove insoles when washing. Our organic materials age beautifully and improve with wear!
+          </p>
+        </div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you offer warranties on defects?</span>
+          <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            All shoes come with a 1-year manufacturing defect warranty. Any defect in materials or craftsmanship is covered with free repair or immediate replacement. Contact our support team with a photo of the defect to claim.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. SHIPPING SECTION ===== -->
+  <section class="subpage-section" id="shipping">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="truck"></i> Delivery Information</span>
+      <h2 class="subpage-title">Shipping Methods &amp; Timelines</h2>
+      <p class="subpage-desc">
+        Fast, carbon-neutral shipping straight to your doorstep in 100% recyclable, plantable packaging.
+      </p>
+    </div>
+
+    <div class="shipping-table-wrap">
+      <table class="shipping-table">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Cost</th>
+            <th>Delivery Time</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Standard Ground</strong></td>
+            <td><span class="shipping-price-tag">FREE</span> (orders over $50) / $4.99</td>
+            <td>5–7 business days</td>
+            <td>100% carbon-neutral, shipped via clean logistics</td>
+          </tr>
+          <tr>
+            <td><strong>Express Shipping</strong></td>
+            <td><span class="shipping-price-tag">$9.99</span></td>
+            <td>2–3 business days</td>
+            <td>Available for all continental US addresses</td>
+          </tr>
+          <tr>
+            <td><strong>Overnight Priority</strong></td>
+            <td><span class="shipping-price-tag">$24.99</span></td>
+            <td>Next business day</td>
+            <td>Orders placed before 12:00 PM EST cutoff</td>
+          </tr>
+          <tr>
+            <td><strong>International Shipping</strong></td>
+            <td><span class="shipping-price-tag">$19.99+</span></td>
+            <td>10–15 business days</td>
+            <td>Delivers to 50+ countries worldwide with duties included</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center; color: #666; font-size: 0.9rem;">
+      📦 <strong>Tracking:</strong> You will receive a tracking number via email as soon as your order ships (within 1–2 business days).
+    </div>
+  </section>
+
+  <!-- ===== 3. RETURNS SECTION ===== -->
+  <section class="subpage-section" id="returns">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="refresh-cw"></i> Zero Risk Guarantee</span>
+      <h2 class="subpage-title">60-Day Return &amp; Exchange Policy</h2>
+      <p class="subpage-desc">
+        Try your shoes at home with complete peace of mind. If the fit, style, or color isn't 100% right, we make returns hassle-free.
+      </p>
+    </div>
+
+    <div class="returns-steps-grid">
+      <div class="return-step-card">
+        <div class="return-step-num">1</div>
+        <h4>Start Online</h4>
+        <p>Enter your order number and email on our online returns portal.</p>
+      </div>
+
+      <div class="return-step-card">
+        <div class="return-step-num">2</div>
+        <h4>Print Free Label</h4>
+        <p>Download our prepaid shipping label — no printer? Use a QR code at drop-off.</p>
+      </div>
+
+      <div class="return-step-card">
+        <div class="return-step-num">3</div>
+        <h4>Drop It Off</h4>
+        <p>Drop your package at any authorized carrier location nationwide.</p>
+      </div>
+
+      <div class="return-step-card">
+        <div class="return-step-num">4</div>
+        <h4>Refund or Exchange</h4>
+        <p>Refunds processed in 5–10 business days, or exchange shipped immediately.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 36px; background: #ffffff; border-radius: 16px; padding: 24px; border: 1px solid rgba(143,169,139,0.3); max-width: 780px; margin-left: auto; margin-right: auto;">
+      <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--forest-green); margin-bottom: 8px;">Key Policy Highlights:</h4>
+      <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #555; line-height: 1.7;">
+        <li><strong>60-day window:</strong> Full 60 days from delivery date to request a return or exchange.</li>
+        <li><strong>Free shipping:</strong> We cover return shipping costs with a prepaid label.</li>
+        <li><strong>Free size exchanges:</strong> Need half a size up or down? We ship the replacement free of charge.</li>
+        <li><strong>Damaged or defective:</strong> Full refund plus free immediate replacement under our 1-year warranty.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 4. CONTACT SECTION ===== -->
+  <section class="subpage-section" id="contact">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="mail"></i> We're Here For You</span>
+      <h2 class="subpage-title">Get in Touch</h2>
+      <p class="subpage-desc">
+        Have questions about bulk orders, sizing advice, or need support? Our team responds within 24 hours.
+      </p>
+    </div>
+
+    <div class="contact-hub-grid">
+      <!-- Direct Contact Details -->
+      <div class="contact-info-cards">
+        <div class="contact-card">
+          <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+          <div class="contact-details">
+            <h4>Email Support</h4>
+            <p>Direct response within 24 hours</p>
+            <a href="mailto:support@ecofriendlyshoes.com">support@ecofriendlyshoes.com</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon-box"><i data-lucide="phone"></i></div>
+          <div class="contact-details">
+            <h4>Phone Support</h4>
+            <p>Toll-free customer line</p>
+            <a href="tel:18003267466">1-800-ECO-SHOES (1-800-326-7466)</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon-box"><i data-lucide="clock"></i></div>
+          <div class="contact-details">
+            <h4>Operating Hours</h4>
+            <p>Monday – Friday: 9:00 AM – 6:00 PM EST</p>
+            <span style="font-size: 0.8rem; color: var(--forest-green); font-weight: 600;">Weekend chat via AI Assistant</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon-box"><i data-lucide="message-circle"></i></div>
+          <div class="contact-details">
+            <h4>AI Live Chat</h4>
+            <p>24/7 instant answers powered by LangChain</p>
+            <span style="font-size: 0.85rem; color: var(--forest-green); font-weight: 700; cursor: pointer;" onclick="document.getElementById('chatToggle').click();">Click here to launch chat →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Inquiry Form -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cName">Your Name</label>
+              <input type="text" id="cName" required placeholder="Alex Morgan" />
+            </div>
+            <div class="form-field">
+              <label for="cEmail">Your Email</label>
+              <input type="email" id="cEmail" required placeholder="alex@example.com" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="cTopic">Inquiry Topic</label>
+            <select id="cTopic">
+              <option value="general">General Inquiry</option>
+              <option value="order">Order Status &amp; Tracking</option>
+              <option value="returns">Return or Exchange Request</option>
+              <option value="defect">Warranty &amp; Defect Claim</option>
+              <option value="custom">Custom or Bulk Order</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" required placeholder="How can we help you today?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Support Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><span class="logo-r">R</span>êve Eco</a>
+        <p class="footer-tagline">Every Step Shapes Tomorrow</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html#new-arrivals">New Arrivals</a>
+          <a href="shop.html#best-sellers">Best Sellers</a>
+          <a href="shop.html#all-shoes">All Shoes</a>
+          <a href="shop.html#gift-cards">Gift Cards</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html#our-story">Our Story</a>
+          <a href="about.html#sustainability">Sustainability</a>
+          <a href="about.html#materials">Materials</a>
+          <a href="about.html#impact-report">Impact Report</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="help.html#faq">FAQ</a>
+          <a href="help.html#shipping">Shipping</a>
+          <a href="help.html#returns">Returns</a>
+          <a href="help.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rêve Eco. All rights reserved. Walk your values.</p>
+      <div class="footer-certs">
+        <span><i data-lucide="leaf" class="footer-cert-icon"></i> B Corp Certified</span>
+        <span><i data-lucide="recycle" class="footer-cert-icon"></i> Climate Neutral</span>
+        <span><i data-lucide="globe" class="footer-cert-icon"></i> 1% for the Planet</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== AI CHATBOT WIDGET ===== -->
+  <button class="chat-widget-toggle" id="chatToggle" aria-label="Open AI Assistant">
+    <div class="chat-toggle-icon"><i data-lucide="message-circle"></i></div>
+    <span class="chat-toggle-label">Ask Eco AI</span>
+    <span class="chat-toggle-badge"></span>
+  </button>
+
+  <div class="chat-window" id="chatWindow" role="dialog" aria-labelledby="chatTitle">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar"><i data-lucide="bot"></i></div>
+        <div class="chat-title-group">
+          <h4 id="chatTitle">Eco Assistant</h4>
+          <div class="chat-status"><span class="status-dot"></span><span>Online · Trained on Eco Guide</span></div>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-header-btn" id="chatMinimize" aria-label="Minimize chat"><i data-lucide="minus"></i></button>
+        <button class="chat-header-btn" id="chatClose" aria-label="Close chat"><i data-lucide="x"></i></button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-msg-bubble">
+          Hello! 👋 Need help with shipping times, returns, or order tracking? Ask me anything right here!
+        </div>
+        <span class="chat-msg-meta">Eco Friendly Shoes AI</span>
+      </div>
+    </div>
+    <div class="chat-suggestions">
+      <button class="chat-pill" data-query="What is your return policy?">Return Policy</button>
+      <button class="chat-pill" data-query="How long does shipping take?">Shipping Info</button>
+      <button class="chat-pill" data-query="What if there's a defect in my shoes?">Warranty Claim</button>
+    </div>
+    <div class="chat-input-bar">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask about shipping, returns..." autocomplete="off" />
+      <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message"><i data-lucide="send"></i></button>
+    </div>
+    <div class="chat-footer-note">Powered by LangChain · Eco Friendly Shoes Dataset v1.0</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rêve Eco — Steps That Count</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="chat.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- ===== FROSTED PILL NAVIGATION (Landing Page Style) ===== -->
+  <div class="pill-nav-wrapper" id="pillNav">
+    <nav class="pill-nav">
+      <span class="pill-nav-brand"><span class="logo-r">R</span>êve Eco</span>
+      <div class="pill-nav-links" id="pillNavLinks">
+        <a href="#mission">Mission</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#impact">Impact</a>
+        <a href="#community">Community</a>
+        <a href="#product">Product</a>
+        <a href="#cta">Contact</a>
+      </div>
+      <button class="pill-hamburger" id="pillHamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- ===== VIDEO HERO SECTION (Landing Page Prompt) ===== -->
+  <section class="video-hero" id="hero">
+    <!-- Video background with fallback to shoes2.jpg -->
+    <video class="video-hero-bg" autoplay muted loop playsinline poster="assets/shoes2.jpg">
+      <source src="assets/hrovid.mp4" type="video/mp4" />
+      <source src="hero.mp4" type="video/mp4" />
+    </video>
+    <!-- Subtle overlays for text legibility -->
+    <div class="video-hero-overlay video-hero-overlay--base"></div>
+    <div class="video-hero-overlay video-hero-overlay--gradient"></div>
+    <div class="video-hero-overlay video-hero-overlay--vignette"></div>
+    <div class="video-hero-overlay video-hero-overlay--glow"></div>
+
+    <!-- Centered hero content -->
+    <div class="video-hero-content">
+      <span class="video-hero-eyebrow fade-in"><i data-lucide="check" class="eyebrow-icon"></i> Steps That Count</span>
+      <h1 class="video-hero-title fade-in">Walk your values</h1>
+      <p class="video-hero-subtext fade-in">
+        Sustainable sneakers designed for style, comfort, and the planet.
+        Every step creates measurable impact.
+      </p>
+      <div class="video-hero-buttons fade-in">
+        <a href="#product" class="vhero-btn vhero-btn--primary">Shop Now</a>
+        <a href="#impact" class="vhero-btn vhero-btn--outline">See Impact</a>
+      </div>
+    </div>
+
+    <!-- Partner/Sustainability strip -->
+    <div class="video-hero-partners fade-in">
+      <p class="partners-label">Trusted by teams focused on</p>
+      <div class="partners-logos">
+        <span>Patagonia</span>
+        <span>Allbirds</span>
+        <span>Veja</span>
+        <span>Rothy's</span>
+        <span>Everlane</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" id="scrollIndicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION SECTION — shoes3.jpg (Campaign Poster) ===== -->
+  <section class="mission" id="mission">
+    <div class="mission-container">
+      <div class="mission-image fade-up">
+        <img
+          src="assets/shoes3.jpg"
+          alt="Steps That Count campaign poster — sneaker on moss with environmental impact graphics showing CO2 reduction, trees, and water conservation"
+        />
+      </div>
+      <div class="mission-text fade-up">
+        <p class="section-eyebrow">Our Mission</p>
+        <h2 class="section-title">
+          Steps That Count<br />
+          <span class="text-accent">For a Healthy Planet</span>
+        </h2>
+        <p class="mission-description">
+          At Rêve Eco, we believe footwear should leave a positive footprint.
+          Every pair is crafted from recycled ocean plastics, organic cotton, and
+          plant-based materials — without sacrificing the style and comfort your
+          generation demands.
+        </p>
+        <p class="mission-description">
+          From recycled material uppers to cork and natural rubber soles, every
+          component is chosen to minimize environmental impact while maximizing
+          performance and aesthetics.
+        </p>
+        <div class="mission-tags">
+          <span class="tag"><i data-lucide="recycle" class="tag-icon"></i> Recycled Materials</span>
+          <span class="tag"><i data-lucide="leaf" class="tag-icon"></i> Plant-Based Soles</span>
+          <span class="tag"><i data-lucide="trees" class="tag-icon"></i> Sustainable Leather</span>
+          <span class="tag"><i data-lucide="droplets" class="tag-icon"></i> Water Conscious</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIFESTYLE SECTION — shoes2.jpg (Lifestyle Street Shot) ===== -->
+  <section class="lifestyle" id="lifestyle">
+    <div class="lifestyle-parallax">
+      <img
+        src="assets/shoes2.jpg"
+        alt="Lifestyle street shot — young person walking through urban environment wearing Rêve Eco sneakers, diverse people in background, green plants and golden hour light"
+        class="parallax-img"
+        id="parallaxImg"
+      />
+    </div>
+    <div class="lifestyle-overlay">
+      <div class="lifestyle-content fade-up">
+        <h2 class="lifestyle-title">Walk the Talk</h2>
+        <p class="lifestyle-subtitle">
+          Real style. Real streets. Real impact.<br />
+          Made for the generation that walks its values.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT STATS SECTION — Data from shoes4.jpg ===== -->
+  <section class="impact" id="impact">
+    <div class="impact-container">
+      <div class="impact-header fade-up">
+        <p class="section-eyebrow">Our Impact</p>
+        <h2 class="section-title">
+          Walk the Talk<br />
+          <span class="text-accent">For a Healthier Planet</span>
+        </h2>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card fade-up">
+          <div class="impact-icon"><i data-lucide="tree-pine"></i></div>
+          <div class="impact-number" data-target="50000" data-suffix="+">0</div>
+          <p class="impact-label">Trees Planted</p>
+          <p class="impact-detail">
+            Through our reforestation partners across 12 countries
+          </p>
+        </div>
+        <div class="impact-card fade-up">
+          <div class="impact-icon"><i data-lucide="droplets"></i></div>
+          <div class="impact-number" data-target="1200000" data-suffix="">0</div>
+          <p class="impact-label">Liters of Water Saved</p>
+          <p class="impact-detail">
+            Compared to conventional shoe manufacturing processes
+          </p>
+        </div>
+        <div class="impact-card fade-up">
+          <div class="impact-icon"><i data-lucide="globe"></i></div>
+          <div class="impact-number" data-target="750" data-suffix="">0</div>
+          <p class="impact-label">Tons of CO₂ Offset</p>
+          <p class="impact-detail">
+            Carbon neutral operations since day one of production
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY SECTION — shoes5.jpg (Full Campaign Poster) ===== -->
+  <section class="community" id="community">
+    <div class="community-bg">
+      <img
+        src="assets/shoes5.jpg"
+        alt="Full campaign poster — 'Every Step Shapes Tomorrow' featuring diverse young people wearing Rêve Eco sneakers in various settings including skateboarding, activism, and everyday moments"
+      />
+    </div>
+    <div class="community-overlay"></div>
+    <div class="community-content fade-up">
+      <p class="section-eyebrow section-eyebrow--light">The Movement</p>
+      <h2 class="community-title">Every Step Shapes Tomorrow</h2>
+      <p class="community-subtitle">
+        Join a community of changemakers. Skaters, activists, dreamers — united
+        by the belief that what you wear can change the world.
+      </p>
+      <a href="#cta" class="btn btn-primary btn-glow">Join the Movement</a>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT FEATURES SECTION — shoes1.jpg (Clean Product Shot) ===== -->
+  <section class="product" id="product">
+    <div class="product-container">
+      <div class="product-image fade-up">
+        <img
+          src="assets/shoes1.jpg"
+          alt="Rêve Eco sustainable sneaker — detailed product view showing sage green recycled mesh upper, natural tan sustainable leather trim, speckled cork sole, and Rêve Eco Recycled Materials branding"
+        />
+      </div>
+      <div class="product-details fade-up">
+        <p class="section-eyebrow">The Shoe</p>
+        <h2 class="section-title">
+          Crafted with Purpose.<br />
+          <span class="text-accent">Designed for You.</span>
+        </h2>
+        <div class="features-list">
+          <div class="feature-item" data-tooltip>
+            <div class="feature-icon"><i data-lucide="recycle"></i></div>
+            <div>
+              <h3 class="feature-title">Recycled Mesh Upper</h3>
+              <p class="feature-desc">
+                Made from 12 recycled plastic bottles, breathable and
+                lightweight.
+              </p>
+            </div>
+            <div class="feature-tooltip">
+              <div class="tooltip-arrow"></div>
+              <h4 class="tooltip-title"><i data-lucide="recycle" class="tooltip-icon"></i> Recycled Mesh Upper</h4>
+              <div class="tooltip-section">
+                <h5>How It's Made</h5>
+                <p>Post-consumer plastic bottles are collected, cleaned, and shredded into flakes. These flakes are melted and extruded into fine polyester yarn, which is then knitted into a breathable, durable mesh fabric. Each pair diverts 12 plastic bottles from landfills and oceans.</p>
+              </div>
+              <div class="tooltip-section">
+                <h5><i data-lucide="globe" class="tooltip-icon-sm"></i> Environmental Impact</h5>
+                <p>Reduces petroleum use by 75% compared to virgin polyester. Saves 2.5 kg of CO₂ emissions per pair. Prevents ocean plastic pollution and reduces landfill waste by giving new life to discarded materials.</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item" data-tooltip>
+            <div class="feature-icon"><i data-lucide="sprout"></i></div>
+            <div>
+              <h3 class="feature-title">Plant-Based Sole</h3>
+              <p class="feature-desc">
+                Natural rubber and cork composite. Grippy, durable, and
+                biodegradable.
+              </p>
+            </div>
+            <div class="feature-tooltip">
+              <div class="tooltip-arrow"></div>
+              <h4 class="tooltip-title"><i data-lucide="sprout" class="tooltip-icon"></i> Plant-Based Sole</h4>
+              <div class="tooltip-section">
+                <h5>How It's Made</h5>
+                <p>Harvested from sustainably managed rubber tree plantations using a non-destructive tapping process. Combined with ground cork oak bark — a renewable resource that regrows after harvest — and bonded with a natural latex binder. The result is a flexible, shock-absorbing sole that fully biodegrades at end of life.</p>
+              </div>
+              <div class="tooltip-section">
+                <h5><i data-lucide="globe" class="tooltip-icon-sm"></i> Environmental Impact</h5>
+                <p>100% biodegradable within 10 years. Cork harvesting actually helps cork oak forests absorb 3–5× more CO₂. Zero synthetic plastics or petrochemicals. Rubber plantations support local farming communities and prevent deforestation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item" data-tooltip>
+            <div class="feature-icon"><i data-lucide="leaf"></i></div>
+            <div>
+              <h3 class="feature-title">Sustainable Leather Trim</h3>
+              <p class="feature-desc">
+                Vegetable-tanned, responsibly sourced leather accents in natural
+                tan.
+              </p>
+            </div>
+            <div class="feature-tooltip">
+              <div class="tooltip-arrow"></div>
+              <h4 class="tooltip-title"><i data-lucide="leaf" class="tooltip-icon"></i> Sustainable Leather Trim</h4>
+              <div class="tooltip-section">
+                <h5>How It's Made</h5>
+                <p>Sourced from LWG Gold-rated tanneries that use vegetable tanning — an ancient process using tree bark extracts (mimosa, chestnut, quebracho) instead of toxic chromium salts. The hides are by-products of the food industry, ensuring no animal is raised solely for leather. Each piece is hand-finished with natural oils for a rich, unique patina.</p>
+              </div>
+              <div class="tooltip-section">
+                <h5><i data-lucide="globe" class="tooltip-icon-sm"></i> Environmental Impact</h5>
+                <p>Eliminates 90% of hazardous chemicals used in conventional chrome tanning. Wastewater is fully biodegradable. Uses 40% less water than standard tanning. Supports zero-waste supply chains by upcycling food industry by-products.</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item" data-tooltip>
+            <div class="feature-icon"><i data-lucide="swatch-book"></i></div>
+            <div>
+              <h3 class="feature-title">Organic Cotton Lining</h3>
+              <p class="feature-desc">
+                GOTS-certified organic cotton interior for all-day comfort.
+              </p>
+            </div>
+            <div class="feature-tooltip">
+              <div class="tooltip-arrow"></div>
+              <h4 class="tooltip-title"><i data-lucide="swatch-book" class="tooltip-icon"></i> Organic Cotton Lining</h4>
+              <div class="tooltip-section">
+                <h5>How It's Made</h5>
+                <p>Grown without synthetic pesticides, herbicides, or GMO seeds on certified organic farms. The cotton is hand-picked to preserve fiber length and quality, then spun into a soft, breathable jersey knit using low-impact dyes. GOTS (Global Organic Textile Standard) certified at every stage from farm to finished fabric.</p>
+              </div>
+              <div class="tooltip-section">
+                <h5><i data-lucide="globe" class="tooltip-icon-sm"></i> Environmental Impact</h5>
+                <p>Uses 91% less water and 62% less energy than conventional cotton. Zero toxic pesticides protects soil health, biodiversity, and farmworker safety. Organic farming builds healthy soils that act as carbon sinks, sequestering up to 0.5 tonnes of CO₂ per hectare annually.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Shop Now — \$129</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / NEWSLETTER SECTION — shoes6.jpg (Minimalist Poster) ===== -->
+  <section class="cta" id="cta">
+    <div class="cta-container">
+      <div class="cta-image fade-up">
+        <img
+          src="assets/shoes6.jpg"
+          alt="Minimalist poster — 'Steps That Count / Walk Your Values' with single sneaker profile against green-to-earth gradient, leaf footprint trail, Scandinavian design aesthetic"
+        />
+      </div>
+      <div class="cta-content fade-up">
+        <h2 class="cta-title">Walk Your Values</h2>
+        <p class="cta-subtitle">
+          Be the first to know about new drops, sustainability stories, and
+          exclusive offers. No spam — just steps that count.
+        </p>
+        <form class="cta-form" id="ctaForm">
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="form-input"
+              required
+              aria-label="Email address"
+            />
+            <button type="submit" class="btn btn-primary btn-form">
+              Join Us
+            </button>
+          </div>
+          <p class="form-note">
+            <i data-lucide="leaf" class="form-note-icon"></i> We plant a tree for every sign-up. Already
+            <strong>50,000+</strong> planted.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <span class="logo-r">R</span>êve Eco
+        </a>
+        <p class="footer-tagline">Every Step Shapes Tomorrow</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/reve___eco__?stkn=ZTRuYmpheWQ5a21z" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.37-6.22V9.4a8.16 8.16 0 0 0 3.85.96V7.04a4.85 4.85 0 0 1-.01-.35z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html#new-arrivals">New Arrivals</a>
+          <a href="shop.html#best-sellers">Best Sellers</a>
+          <a href="shop.html#all-shoes">All Shoes</a>
+          <a href="shop.html#gift-cards">Gift Cards</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html#our-story">Our Story</a>
+          <a href="about.html#sustainability">Sustainability</a>
+          <a href="about.html#materials">Materials</a>
+          <a href="about.html#impact-report">Impact Report</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="help.html#faq">FAQ</a>
+          <a href="help.html#shipping">Shipping</a>
+          <a href="help.html#returns">Returns</a>
+          <a href="help.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rêve Eco. All rights reserved. Walk your values.</p>
+      <div class="footer-certs">
+        <span><i data-lucide="leaf" class="footer-cert-icon"></i> B Corp Certified</span>
+        <span><i data-lucide="recycle" class="footer-cert-icon"></i> Climate Neutral</span>
+        <span><i data-lucide="globe" class="footer-cert-icon"></i> 1% for the Planet</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== AI CHATBOT WIDGET (LangChain Integration) ===== -->
+  <button class="chat-widget-toggle" id="chatToggle" aria-label="Open AI Assistant">
+    <div class="chat-toggle-icon"><i data-lucide="message-circle"></i></div>
+    <span class="chat-toggle-label">Ask Eco AI</span>
+    <span class="chat-toggle-badge"></span>
+  </button>
+
+  <div class="chat-window" id="chatWindow" role="dialog" aria-labelledby="chatTitle">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">
+          <i data-lucide="bot"></i>
+        </div>
+        <div class="chat-title-group">
+          <h4 id="chatTitle">Eco Assistant</h4>
+          <div class="chat-status">
+            <span class="status-dot"></span>
+            <span>Online · Trained on Eco Guide</span>
+          </div>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-header-btn" id="chatMinimize" aria-label="Minimize chat">
+          <i data-lucide="minus"></i>
+        </button>
+        <button class="chat-header-btn" id="chatClose" aria-label="Close chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-msg-bubble">
+          Hello! 👋 I'm your <strong>Rêve Eco Assistant</strong>, powered by LangChain and trained on our official sustainability catalog and policies.<br><br>
+          How can I help you take a step towards a healthier planet today?
+        </div>
+        <span class="chat-msg-meta">Eco Friendly Shoes AI</span>
+      </div>
+    </div>
+
+    <!-- Quick suggestion pills -->
+    <div class="chat-suggestions">
+      <button class="chat-pill" data-query="What discount codes do you have?">Discount Codes</button>
+      <button class="chat-pill" data-query="What is your return policy?">Return Policy</button>
+      <button class="chat-pill" data-query="What sizes do you carry?">Shoe Sizing</button>
+      <button class="chat-pill" data-query="Are the shoes waterproof?">Waterproof?</button>
+      <button class="chat-pill" data-query="What makes Eco Friendly Shoes different from regular sneakers?">Materials &amp; Impact</button>
+      <button class="chat-pill" data-query="How long does shipping take?">Shipping Info</button>
+    </div>
+
+    <div class="chat-input-bar">
+      <input
+        type="text"
+        class="chat-input"
+        id="chatInput"
+        placeholder="Ask about sizing, materials, returns..."
+        autocomplete="off"
+        aria-label="Ask a question"
+      />
+      <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message">
+        <i data-lucide="send"></i>
+      </button>
+    </div>
+    <div class="chat-footer-note">
+      Powered by LangChain · Eco Friendly Shoes Dataset v1.0
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>

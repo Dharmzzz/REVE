@@ -200,6 +200,31 @@ class EcoShoesRAG:
                 "keywords": ["payment", "apple pay", "google pay", "klarna", "afterpay", "card"],
                 "question": "What payment methods do you accept?",
                 "answer": "We accept all major credit cards (Visa, Mastercard, Amex, Discover), PayPal, Apple Pay, Google Pay, and interest-free buy-now-pay-later installments via Klarna and Afterpay."
+            },
+            {
+                "keywords": ["gift card", "voucher", "gift certificate", "present", "giftcard", "gift cards"],
+                "question": "Do you offer gift cards and how do they work?",
+                "answer": "Yes! We offer digital gift cards in denominations of **$25, $50, $100, and $200**. They are delivered instantly via email with your custom personal note, never expire, generate zero packaging waste, and we plant **1 tree for every gift card** purchased! They can be used on any of our collections."
+            },
+            {
+                "keywords": ["collection", "collections", "types of shoes", "models", "styles", "lineup", "sneakers"],
+                "question": "What sneaker collections do you offer?",
+                "answer": "We offer 5 purpose-built collections:\n• **Urban Essentials** ($79–$99): Minimalist everyday city sneakers with recycled plastic & vegan leather.\n• **Trail Explorer** ($119–$149): Outdoor hiking shoes with natural cork sole & water-resistant finish.\n• **Street Style** ($89–$129): Skate & lifestyle sneakers with reinforced toe & durable organic canvas.\n• **Athletic Performance** ($129–$169): Running & training shoes with responsive plant-based PU cushioning.\n• **Eco Classics** ($99–$119): Timeless everyday sneakers woven from recycled ocean plastic flakes."
+            },
+            {
+                "keywords": ["return steps", "how to return", "exchange process", "return label", "how do i return"],
+                "question": "What are the steps to return or exchange a pair of shoes?",
+                "answer": "Returning or exchanging is easy and 100% free under our 60-day guarantee:\n1. **Start Online**: Enter your order number and email on our returns portal.\n2. **Print Free Label**: Download our prepaid shipping label (or show the QR code at drop-off if you don't have a printer).\n3. **Drop Off**: Drop your box at any authorized postal/carrier location.\n4. **Instant Refund/Exchange**: Size exchanges ship immediately; refunds are processed within 5–10 business days."
+            },
+            {
+                "keywords": ["story", "mission", "founder", "why started", "history", "about us", "background"],
+                "question": "What is the story behind Rêve Eco?",
+                "answer": "Rêve Eco was founded to prove footwear can unite Gen Z streetwear culture with radical environmental regeneration. Conventional footwear dumps 24 billion pairs into landfills every year. Every pair of Rêve Eco shoes diverts up to 1kg of ocean plastic, saves 50–100L of water, plants 1–2 trees, and offsets 5–10kg of CO₂."
+            },
+            {
+                "keywords": ["commitments", "goals", "2025", "targets", "renewable energy", "pledge"],
+                "question": "What are your future sustainability commitments?",
+                "answer": "By 2025, Rêve Eco is committed to:\n1. Using **100% renewable energy** across all manufacturing and logistics.\n2. Reducing packaging waste by **50%**.\n3. Planting **1 million trees** through verified global reforestation partners.\n4. Achieving verified **net carbon neutrality** across all operations."
             }
         ]
         return curated_qas

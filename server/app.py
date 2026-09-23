@@ -55,9 +55,11 @@ def chat_endpoint(payload: ChatMessage):
         escalated=result.get("escalated", False)
     )
 
-# Mount static files of the website root so the whole site can also run on FastAPI
+# Mount built React dist if available, else website root
 ROOT_DIR = Path(__file__).resolve().parent.parent
-app.mount("/", StaticFiles(directory=str(ROOT_DIR), html=True), name="static")
+DIST_DIR = ROOT_DIR / "dist"
+static_dir = DIST_DIR if DIST_DIR.exists() else ROOT_DIR
+app.mount("/", StaticFiles(directory=str(static_dir), html=True), name="static")
 
 if __name__ == "__main__":
     import uvicorn

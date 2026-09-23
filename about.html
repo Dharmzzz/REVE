@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us &amp; Sustainability — Rêve Eco</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="chat.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- ===== FROSTED PILL NAVIGATION ===== -->
+  <div class="pill-nav-wrapper" id="pillNav">
+    <nav class="pill-nav">
+      <a href="index.html" class="pill-nav-brand"><span class="logo-r">R</span>êve Eco</a>
+      <div class="pill-nav-links" id="pillNavLinks">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html" class="active">About</a>
+        <a href="help.html">Help &amp; FAQs</a>
+        <a href="help.html#contact">Contact</a>
+      </div>
+      <button class="pill-hamburger" id="pillHamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span>About</span>
+    </div>
+    <h1 class="page-title">Behind the Movement</h1>
+    <p class="page-subtitle">
+      Proving that fashion-forward design, streetwear culture, and radical environmental regeneration can walk hand in hand.
+    </p>
+  </header>
+
+  <!-- ===== SUBNAV TABS ===== -->
+  <div class="subnav-wrapper">
+    <div class="subnav-tabs">
+      <a href="#our-story" class="subnav-tab active">
+        <i data-lucide="book-open"></i> Our Story
+      </a>
+      <a href="#sustainability" class="subnav-tab">
+        <i data-lucide="leaf"></i> Sustainability
+      </a>
+      <a href="#materials" class="subnav-tab">
+        <i data-lucide="recycle"></i> Materials
+      </a>
+      <a href="#impact-report" class="subnav-tab">
+        <i data-lucide="globe"></i> Impact Report
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 1. OUR STORY SECTION ===== -->
+  <section class="subpage-section" id="our-story">
+    <div class="story-grid">
+      <div class="story-content">
+        <span class="subpage-eyebrow"><i data-lucide="book-open"></i> The Genesis</span>
+        <h3>Built for the Generation That Walks Its Values</h3>
+        <p>
+          Rêve Eco was founded with a singular conviction: the footwear industry didn't need another generic sneaker brand — it needed a fundamental revolution in how shoes are conceived, sourced, and returned to the earth.
+        </p>
+        <p>
+          Every year, over 24 billion pairs of synthetic shoes are produced worldwide, the vast majority ending up in landfills where petro-chemical plastics take centuries to decompose. We set out to prove that eco-conscious design doesn't require compromise.
+        </p>
+        <div class="story-quote">
+          "Every step is either a footprint on the planet or a step towards healing it. We choose to heal."
+        </div>
+        <p>
+          From the skate parks to the mountain trails, from university campuses to climate marches, Rêve Eco is worn by changemakers united by optimism and radical authenticity.
+        </p>
+      </div>
+      <div>
+        <img
+          src="assets/shoes5.jpg"
+          alt="Rêve Eco community changemakers"
+          style="width: 100%; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.12);"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. SUSTAINABILITY COMMITMENTS & CERTIFICATIONS ===== -->
+  <section class="subpage-section" id="sustainability">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="leaf"></i> Radical Accountability</span>
+      <h2 class="subpage-title">Our Sustainability Commitments</h2>
+      <p class="subpage-desc">
+        We don't do vague greenwashing. We operate with transparent, third-party audited environmental and social targets.
+      </p>
+    </div>
+
+    <div class="commitments-grid">
+      <!-- Commitment 1 -->
+      <div class="commitment-card">
+        <div class="commitment-icon"><i data-lucide="sun"></i></div>
+        <h4>100% Renewable Energy</h4>
+        <p>Committed to running 100% of our production, warehousing, and logistics hubs on wind and solar power by 2025.</p>
+      </div>
+
+      <!-- Commitment 2 -->
+      <div class="commitment-card">
+        <div class="commitment-icon"><i data-lucide="package"></i></div>
+        <h4>50% Less Packaging Waste</h4>
+        <p>Eliminating all single-use virgin plastics from our shipping boxes, paper wrapping, and tape.</p>
+      </div>
+
+      <!-- Commitment 3 -->
+      <div class="commitment-card">
+        <div class="commitment-icon"><i data-lucide="trees"></i></div>
+        <h4>1 Million Trees Pledged</h4>
+        <p>Partnered with certified reforestation cooperatives across 12 countries to plant 1M trees in damaged ecosystems.</p>
+      </div>
+
+      <!-- Commitment 4 -->
+      <div class="commitment-card">
+        <div class="commitment-icon"><i data-lucide="shield-check"></i></div>
+        <h4>Net Carbon Neutrality</h4>
+        <p>100% carbon-neutral operations and shipping, with all residual emissions offset via vetted carbon removal projects.</p>
+      </div>
+    </div>
+
+    <!-- Certifications Strip -->
+    <div style="margin-top: 50px; background: #ffffff; border-radius: 16px; padding: 30px; border: 1px solid rgba(143,169,139,0.3); text-align: center;">
+      <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--forest-green); margin-bottom: 20px;">
+        Independently Verified &amp; Certified
+      </h4>
+      <div style="display: flex; justify-content: center; gap: 36px; flex-wrap: wrap;">
+        <span style="font-weight: 700; color: #444;"><i data-lucide="check-circle" style="width:16px; height:16px; stroke:var(--forest-green); vertical-align:-2px; margin-right:4px;"></i> B Corp Certified</span>
+        <span style="font-weight: 700; color: #444;"><i data-lucide="check-circle" style="width:16px; height:16px; stroke:var(--forest-green); vertical-align:-2px; margin-right:4px;"></i> Fair Trade Certified</span>
+        <span style="font-weight: 700; color: #444;"><i data-lucide="check-circle" style="width:16px; height:16px; stroke:var(--forest-green); vertical-align:-2px; margin-right:4px;"></i> Carbon Neutral Shipping</span>
+        <span style="font-weight: 700; color: #444;"><i data-lucide="check-circle" style="width:16px; height:16px; stroke:var(--forest-green); vertical-align:-2px; margin-right:4px;"></i> Ocean Wise Partner</span>
+        <span style="font-weight: 700; color: #444;"><i data-lucide="check-circle" style="width:16px; height:16px; stroke:var(--forest-green); vertical-align:-2px; margin-right:4px;"></i> Sustainable Materials Index</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. MATERIALS BREAKDOWN ===== -->
+  <section class="subpage-section" id="materials">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="recycle"></i> Ingredient Transparency</span>
+      <h2 class="subpage-title">What Goes Into Each Shoe</h2>
+      <p class="subpage-desc">
+        Every material is meticulously selected for maximum circularity, performance, and biodegradability.
+      </p>
+    </div>
+
+    <div class="materials-detail-grid">
+      <!-- Upper -->
+      <div class="material-detail-card">
+        <span style="font-size: 1.8rem; color: var(--forest-green);"><i data-lucide="recycle"></i></span>
+        <h4>Upper Construction</h4>
+        <h5>Materials Used</h5>
+        <p>12 post-consumer plastic bottles recycled per pair, organic cotton canvas, and vegetable-tanned vegan leather alternatives.</p>
+        <h5>Environmental Benefit</h5>
+        <p>75% reduction in petroleum reliance vs virgin polyester. Diverts ocean plastics and prevents microplastic landfill runoff.</p>
+      </div>
+
+      <!-- Sole -->
+      <div class="material-detail-card">
+        <span style="font-size: 1.8rem; color: var(--forest-green);"><i data-lucide="sprout"></i></span>
+        <h4>Plant-Based Soles</h4>
+        <h5>Materials Used</h5>
+        <p>Ground cork oak bark harvested non-destructively, blended with renewable tapped rubber and natural latex binder.</p>
+        <h5>Environmental Benefit</h5>
+        <p>Harvested cork oak forests absorb 3–5× more carbon dioxide than unharvested trees. Fully biodegrades at end of lifecycle.</p>
+      </div>
+
+      <!-- Lining -->
+      <div class="material-detail-card">
+        <span style="font-size: 1.8rem; color: var(--forest-green);"><i data-lucide="swatch-book"></i></span>
+        <h4>Interior Lining</h4>
+        <h5>Materials Used</h5>
+        <p>GOTS-certified (Global Organic Textile Standard) jersey knit cotton combined with breathable recycled foam padding.</p>
+        <h5>Environmental Benefit</h5>
+        <p>Zero synthetic toxic pesticides, 91% less water consumption, hypoallergenic, and naturally odor-inhibiting.</p>
+      </div>
+
+      <!-- Packaging -->
+      <div class="material-detail-card">
+        <span style="font-size: 1.8rem; color: var(--forest-green);"><i data-lucide="package"></i></span>
+        <h4>Plantable Packaging</h4>
+        <h5>Materials Used</h5>
+        <p>100% post-consumer unbleached cardboard box, water-based inks, and wildflower seed paper labels.</p>
+        <h5>Environmental Benefit</h5>
+        <p>Zero plastic wrapping. Plant your shoe tag in soil, add water, and watch native bee-friendly wildflowers bloom!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. IMPACT REPORT ===== -->
+  <section class="subpage-section" id="impact-report">
+    <div class="subpage-section-header">
+      <span class="subpage-eyebrow"><i data-lucide="globe"></i> Verified Data</span>
+      <h2 class="subpage-title">Annual Impact Report</h2>
+      <p class="subpage-desc">
+        Real numbers, real regeneration. Here is the cumulative planetary impact achieved by our global community:
+      </p>
+    </div>
+
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-icon"><i data-lucide="tree-pine"></i></div>
+        <div class="impact-number">50,000+</div>
+        <p class="impact-label">Trees Planted</p>
+        <p class="impact-detail">Restoring biodiversity in Brazil, Indonesia, Madagascar, and California.</p>
+      </div>
+
+      <div class="impact-card">
+        <div class="impact-icon"><i data-lucide="droplets"></i></div>
+        <div class="impact-number">1,200,000</div>
+        <p class="impact-label">Liters Water Saved</p>
+        <p class="impact-detail">Saved through closed-loop recycling and natural vegetable tanning processes.</p>
+      </div>
+
+      <div class="impact-card">
+        <div class="impact-icon"><i data-lucide="globe"></i></div>
+        <div class="impact-number">750</div>
+        <p class="impact-label">Tons CO₂ Offset</p>
+        <p class="impact-detail">Directly offset and verified by third-party climate neutral standards.</p>
+      </div>
+    </div>
+
+    <!-- Per-Shoe Impact Summary Table -->
+    <div style="margin-top: 40px; background: #ffffff; border-radius: 16px; padding: 24px; border: 1px solid rgba(0,0,0,0.06); max-width: 700px; margin-left: auto; margin-right: auto;">
+      <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--charcoal); margin-bottom: 14px; text-align: center;">
+        Your Contribution Per Pair Purchased
+      </h4>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.9rem;">
+        <div style="padding: 10px; background: var(--off-white); border-radius: 8px;"><strong>Trees Planted:</strong> 1–2 Trees</div>
+        <div style="padding: 10px; background: var(--off-white); border-radius: 8px;"><strong>Plastic Diverted:</strong> 500g – 1kg</div>
+        <div style="padding: 10px; background: var(--off-white); border-radius: 8px;"><strong>Water Conserved:</strong> 50 – 100 Liters</div>
+        <div style="padding: 10px; background: var(--off-white); border-radius: 8px;"><strong>Carbon Offset:</strong> 5 – 10kg CO₂ eq.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><span class="logo-r">R</span>êve Eco</a>
+        <p class="footer-tagline">Every Step Shapes Tomorrow</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html#new-arrivals">New Arrivals</a>
+          <a href="shop.html#best-sellers">Best Sellers</a>
+          <a href="shop.html#all-shoes">All Shoes</a>
+          <a href="shop.html#gift-cards">Gift Cards</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html#our-story">Our Story</a>
+          <a href="about.html#sustainability">Sustainability</a>
+          <a href="about.html#materials">Materials</a>
+          <a href="about.html#impact-report">Impact Report</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="help.html#faq">FAQ</a>
+          <a href="help.html#shipping">Shipping</a>
+          <a href="help.html#returns">Returns</a>
+          <a href="help.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rêve Eco. All rights reserved. Walk your values.</p>
+      <div class="footer-certs">
+        <span><i data-lucide="leaf" class="footer-cert-icon"></i> B Corp Certified</span>
+        <span><i data-lucide="recycle" class="footer-cert-icon"></i> Climate Neutral</span>
+        <span><i data-lucide="globe" class="footer-cert-icon"></i> 1% for the Planet</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== AI CHATBOT WIDGET ===== -->
+  <button class="chat-widget-toggle" id="chatToggle" aria-label="Open AI Assistant">
+    <div class="chat-toggle-icon"><i data-lucide="message-circle"></i></div>
+    <span class="chat-toggle-label">Ask Eco AI</span>
+    <span class="chat-toggle-badge"></span>
+  </button>
+
+  <div class="chat-window" id="chatWindow" role="dialog" aria-labelledby="chatTitle">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar"><i data-lucide="bot"></i></div>
+        <div class="chat-title-group">
+          <h4 id="chatTitle">Eco Assistant</h4>
+          <div class="chat-status"><span class="status-dot"></span><span>Online · Trained on Eco Guide</span></div>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-header-btn" id="chatMinimize" aria-label="Minimize chat"><i data-lucide="minus"></i></button>
+        <button class="chat-header-btn" id="chatClose" aria-label="Close chat"><i data-lucide="x"></i></button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-msg-bubble">
+          Hello! 👋 Have questions about our sustainability, certifications, or materials? Ask me anything!
+        </div>
+        <span class="chat-msg-meta">Eco Friendly Shoes AI</span>
+      </div>
+    </div>
+    <div class="chat-suggestions">
+      <button class="chat-pill" data-query="What certifications do you have?">Certifications</button>
+      <button class="chat-pill" data-query="What makes Eco Friendly Shoes different from regular sneakers?">Materials</button>
+      <button class="chat-pill" data-query="Are Eco Friendly Shoes vegan?">100% Vegan?</button>
+    </div>
+    <div class="chat-input-bar">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask about materials, trees planted..." autocomplete="off" />
+      <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message"><i data-lucide="send"></i></button>
+    </div>
+    <div class="chat-footer-note">Powered by LangChain · Eco Friendly Shoes Dataset v1.0</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>
