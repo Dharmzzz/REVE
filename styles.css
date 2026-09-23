@@ -320,17 +320,41 @@ a {
 }
 
 .video-hero-overlay--glow {
-  top: -14%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 1000px;
-  height: 720px;
+  max-width: 100vw;
+  height: 620px;
   inset: unset;
   background: radial-gradient(
-    ellipse at 50% 30%,
-    rgba(34, 197, 94, 0.06) 0%,
-    transparent 68%
+    ellipse at 50% 40%,
+    rgba(110, 231, 183, 0.28) 0%,
+    rgba(52, 211, 153, 0.16) 30%,
+    rgba(16, 185, 129, 0.08) 55%,
+    transparent 72%
   );
+  filter: blur(45px);
+  animation: mintHazeAura 9s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes mintHazeAura {
+  0% {
+    transform: translateX(-50%) scale(0.92) translateY(0);
+    opacity: 0.7;
+    filter: blur(40px);
+  }
+  50% {
+    transform: translateX(-48%) scale(1.08) translateY(-10px);
+    opacity: 1;
+    filter: blur(55px);
+  }
+  100% {
+    transform: translateX(-52%) scale(0.98) translateY(10px);
+    opacity: 0.85;
+    filter: blur(45px);
+  }
 }
 
 /* Hero Content — centered, top-anchored */
@@ -345,50 +369,97 @@ a {
   padding: 15vh 24px 0;
 }
 
-/* Eyebrow pill */
+/* Eyebrow pill with mint haze glow */
 .video-hero-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px 14px;
+  gap: 7px;
+  padding: 6px 16px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(110, 231, 183, 0.12);
+  border: 1px solid rgba(167, 243, 208, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   font-size: 11px;
-  font-weight: 500;
-  color: #ffffff;
-  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #f0fdf4;
+  margin-bottom: 22px;
+  box-shadow: 0 0 20px rgba(110, 231, 183, 0.2), inset 0 0 12px rgba(167, 243, 208, 0.1);
+  transition: all 0.3s ease;
+}
+
+.video-hero-eyebrow:hover {
+  background: rgba(110, 231, 183, 0.2);
+  border-color: rgba(167, 243, 208, 0.7);
+  box-shadow: 0 0 30px rgba(110, 231, 183, 0.4), inset 0 0 16px rgba(167, 243, 208, 0.2);
+  transform: translateY(-1px);
 }
 
 .eyebrow-icon {
   width: 12px;
   height: 12px;
-  stroke: #ffffff;
+  stroke: #6ee7b7;
   stroke-width: 2.5;
+  filter: drop-shadow(0 0 6px rgba(110, 231, 183, 0.7));
 }
 
-/* Headline */
+/* Animated Flowing Mint Haze Headline */
 .video-hero-title {
   margin: 0;
   font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: clamp(1.9rem, 4.4vw, 3.1rem);
+  font-weight: 700;
+  font-size: clamp(2.1rem, 4.8vw, 3.4rem);
   line-height: 1.08;
   letter-spacing: -0.025em;
-  color: #ffffff;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    115deg,
+    #ffffff 0%,
+    #e6fffa 15%,
+    #a7f3d0 32%,
+    #6ee7b7 50%,
+    #e6fffa 68%,
+    #34d399 85%,
+    #ffffff 100%
+  );
+  background-size: 280% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: flowingMintText 7s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 22px rgba(110, 231, 183, 0.5))
+          drop-shadow(0 0 55px rgba(52, 211, 153, 0.28));
+  display: inline-block;
+  position: relative;
 }
 
-/* Subtext */
+@keyframes flowingMintText {
+  0% {
+    background-position: 0% 50%;
+    filter: drop-shadow(0 0 18px rgba(110, 231, 183, 0.4))
+            drop-shadow(0 0 45px rgba(52, 211, 153, 0.22));
+  }
+  50% {
+    background-position: 100% 50%;
+    filter: drop-shadow(0 0 30px rgba(167, 243, 208, 0.65))
+            drop-shadow(0 0 70px rgba(110, 231, 183, 0.38));
+  }
+  100% {
+    background-position: 0% 50%;
+    filter: drop-shadow(0 0 20px rgba(110, 231, 183, 0.45))
+            drop-shadow(0 0 50px rgba(52, 211, 153, 0.25));
+  }
+}
+
+/* Subtext with subtle mint haze glow */
 .video-hero-subtext {
-  margin: 16px 0 0;
-  max-width: 460px;
+  margin: 18px 0 0;
+  max-width: 480px;
   font-size: 14px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.65;
+  color: rgba(240, 253, 244, 0.92);
   font-weight: 500;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6), 0 0 25px rgba(110, 231, 183, 0.18);
 }
 
 /* Buttons */
@@ -430,15 +501,17 @@ a {
 
 .vhero-btn--outline {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(110, 231, 183, 0.12);
+  border: 1px solid rgba(167, 243, 208, 0.45);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(110, 231, 183, 0.15);
 }
 
 .vhero-btn--outline:hover {
-  background: rgba(255, 255, 255, 0.28);
-  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(110, 231, 183, 0.25);
+  border-color: rgba(167, 243, 208, 0.8);
+  box-shadow: 0 0 30px rgba(110, 231, 183, 0.35);
 }
 
 /* Partner / Sustainability strip */
